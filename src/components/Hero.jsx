@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion';
 import { HiArrowRight, HiSparkles } from 'react-icons/hi';
+import { Link } from 'react-router';
 
 const Hero = () => {
+
   return (
     <div className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-white py-24 lg:py-32">
       {/* Background Decorative Blur Gradients */}
@@ -46,6 +48,7 @@ const Hero = () => {
           className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4"
         >
           {/* Primary Action Button */}
+          <Link to={'membership-form'}>
           <button 
             
             className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-indigo-600 rounded-xl shadow-xl shadow-indigo-200 hover:bg-indigo-700 active:scale-95 transition-all group cursor-pointer"
@@ -53,8 +56,9 @@ const Hero = () => {
             <span>Register Now</span>
             <HiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
           </button>
+          </Link>
           
-          {/* Secondary Action Anchor (smooth scroll to section) */}
+          {/* Secondary Action Anchor  */}
           <a 
             href="#clubs" 
             className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-700 bg-white border border-gray-200 rounded-xl shadow-sm hover:bg-gray-50 active:scale-95 transition-all"
