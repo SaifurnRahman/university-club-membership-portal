@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { FaGraduationCap } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
+import { NavLink } from 'react-router';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,13 +42,15 @@ const Navbar = () => {
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center space-x-8">
-            <button 
-             
-              className='text-sm font-medium transition-colors bg-transparent border-none cursor-pointer text-indigo-600' 
+            <NavLink to={'/'}>
+                <button 
+             href="/"
+              className='text-sm font-medium transition-colors bg-transparent border-none cursor-pointer' 
             
             >
               Home
             </button>
+            </NavLink>
             <a href="#about" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">
               About
             </a>
@@ -57,12 +60,14 @@ const Navbar = () => {
             <a href="#faq" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">
               FAQ
             </a>
-            <button 
+            <NavLink to={'membership-form'}>
+                <button 
               
               className="relative inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white bg-indigo-600 rounded-xl shadow-lg shadow-indigo-200 hover:bg-indigo-700 active:scale-95 transition-all cursor-pointer"
             >
               Join Portal
             </button>
+            </NavLink>
           </div>
 
           {/* Mobile menu toggle button */}

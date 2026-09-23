@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { HiArrowRight, HiSparkles } from 'react-icons/hi';
 
-export default function Hero({ onNavigate }) {
+const Hero = () => {
   return (
     <div className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-white py-24 lg:py-32">
       {/* Background Decorative Blur Gradients */}
@@ -45,9 +45,9 @@ export default function Hero({ onNavigate }) {
           transition={{ delay: 0.3 }}
           className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4"
         >
-          {/* Primary Action Button (triggers page change state in App.js) */}
+          {/* Primary Action Button */}
           <button 
-            onClick={onNavigate} 
+            
             className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-indigo-600 rounded-xl shadow-xl shadow-indigo-200 hover:bg-indigo-700 active:scale-95 transition-all group cursor-pointer"
           >
             <span>Register Now</span>
@@ -66,3 +66,5 @@ export default function Hero({ onNavigate }) {
     </div>
   );
 }
+
+export default  Hero
