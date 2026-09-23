@@ -119,11 +119,13 @@ const Navbar = () => {
               FAQ
             </a>
             <div className="pt-2">
-              <button 
+              <NavLink to={'membership-form'}>
+                <button 
                 className="w-full text-center py-3 text-white bg-indigo-600 rounded-xl shadow-md font-medium cursor-pointer"
               >
                 Join Portal
               </button>
+              </NavLink>
             </div>
           </motion.div>
         )}
