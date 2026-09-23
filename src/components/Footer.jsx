@@ -14,7 +14,7 @@ const Footer = () => {
               The centralized platform for university student organizations, empowering collaboration, tracking engagement, and managing memberships seamlessly.
             </p>
             <p className="mt-4 text-slate-500 text-xs">
-              Contact: support@campus-sync.edu | Phone: +880 1234-567890
+              Contact: support@unicare.edu | Phone: +880 1234-567890
             </p>
           </div>
 
@@ -51,7 +51,7 @@ const Footer = () => {
         {/* Bottom Bar: Copyright & Socials */}
         <div className="pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-slate-500 text-xs text-center sm:text-left">
-            © {new Date().getFullYear()} CampusSync. All rights reserved. Built for Information System Design Lab.
+            © {new Date().getFullYear()} unicare. All rights reserved. Built for Information System Design Lab.
           </p>
           <div className="flex space-x-3">
             <a href="#" aria-label="Facebook" className="w-9 h-9 rounded-xl bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-indigo-600 hover:text-white transition-colors"><FaFacebookF size={14} /></a>
