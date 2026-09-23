@@ -7,7 +7,13 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <motion.nav 
@@ -29,7 +35,7 @@ const Navbar = () => {
               <FaGraduationCap className="text-xl" />
             </div>
             <span className="font-bold text-xl text-gray-900 tracking-tight">
-              Campus<span className="text-indigo-600">Sync</span>
+              Uni<span className="text-indigo-600">Circle</span>
             </span>
           </button>
 
